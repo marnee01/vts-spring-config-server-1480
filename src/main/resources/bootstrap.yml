@@ -11,11 +11,20 @@ spring:
               label: dev
             webapp:
               label: dev
+            deskttopapp:
+              label: dev
               
         git:
           uri: https://github.com/marnee01/mderider-{application}.git
           
           repos:
             WebApp:
+                searchPaths: Shared/, Shared, Shared/*, webapp
                 pattern: webapp
-                uri: https://github.com/marnee01/mderider-webapp.git
+                uri: https://github.com/marnee01/mderider-MultiApps.git
+                
+            DesktopApp:
+                searchPaths: Shared/, Shared, Shared/*, desktopapp
+                pattern: desktopapp
+                uri: https://github.com/marnee01/mderider-MultiApps.git
+                
