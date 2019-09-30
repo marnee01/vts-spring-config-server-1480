@@ -1,0 +1,21 @@
+server:
+  port: 8888
+  
+spring:
+  cloud:
+    config:
+      server:
+        health:
+          repositories:
+            SomeApplication1:
+              label: dev
+            webapp:
+              label: dev
+              
+        git:
+          uri: https://github.com/marnee01/mderider-{application}.git
+          
+          repos:
+            WebApp:
+                pattern: webapp
+                uri: https://github.com/marnee01/mderider-webapp.git
