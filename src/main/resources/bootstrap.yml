@@ -19,12 +19,12 @@ spring:
           
           repos:
             WebApp:
-                searchPaths: Shared/, Shared, Shared/*, webapp
+                searchPaths: Shared, webapp
                 pattern: webapp
                 uri: https://github.com/marnee01/mderider-MultiApps.git
                 
             DesktopApp:
-                searchPaths: Shared/, Shared, Shared/*, desktopapp
+                searchPaths: Shared, desktopapp
                 pattern: desktopapp
                 uri: https://github.com/marnee01/mderider-MultiApps.git
                 
